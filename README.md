@@ -1,3 +1,12 @@
+I forked this so that I would have a git repo to make changes to
+that I could "update from source" from retropie.  I had to
+manually edit the retropie-setup scripts to point to this repo.
+
+The only change I made, and this is the easiest way to get this
+working is in libpcsxcore/plugins.c changed the analog ID to
+0x23 like a negcon (line 647).  Then my arduino-negcon is
+recognized by Gran Turismo 1 as a negcon and works properly.
+
 PCSX-ReARMed - yet another PCSX fork
 ====================================
 
