@@ -644,7 +644,7 @@ void _PADstartPoll(PadDataS *pad) {
             respSize = 8;
             break;
         case PSE_PAD_TYPE_ANALOGPAD: // scph1150
-            stdpar[0] = 0x73;
+            stdpar[0] = 0x23;
             stdpar[2] = pad->buttonStatus & 0xff;
             stdpar[3] = pad->buttonStatus >> 8;
             stdpar[4] = pad->rightJoyX;
